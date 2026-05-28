@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News & Insights | ASHTAPADA CHESS ACADEMY</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Sub Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Ashtapada Chess Academy Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Chess News & Insights</h1>
+    </section>
+
+
+    <!-- Blog Page Content -->
+    <section class="blog-content">
+        <div class="row">
+
+            <!-- Left Section -->
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="Chess Training Certificate">
+                <h2>Professional Chess Training & Certification Programs</h2>
+
+                <p>
+                    At <strong>ASHTAPADA CHESS ACADEMY</strong>, we provide structured
+                    online and offline chess training programs designed for students
+                    at every skill level. Our coaching methodology focuses on strategic
+                    thinking, concentration, discipline, and competitive excellence.
+                </p>
+                <br>
+
+                <p>
+                    Students receive comprehensive guidance in opening preparation,
+                    tactical combinations, positional understanding, endgame techniques,
+                    and tournament psychology. Our experienced coaches help each student
+                    build a strong foundation and progress toward achieving their
+                    personal and competitive goals.
+                </p>
+                <br>
+
+                <p>
+                    Upon successful completion of our training modules, students are
+                    awarded certificates recognizing their dedication and progress.
+                    We also organize regular tournaments, workshops, and seminars to
+                    provide valuable practical experience and exposure.
+                </p>
+                <br>
+
+                <p>
+                    Beyond chess mastery, our programs are designed to enhance memory,
+                    problem-solving ability, and academic performance. We believe chess
+                    is a powerful educational tool that prepares students for success
+                    both on and off the board.
+                </p>
+
+                <!-- Comment Box -->
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">
+                            POST COMMENT
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- Right Section -->
+            <div class="blog-right">
+                <h3>Blog Categories</h3>
+
+                <div>
+                    <span>Chess Training Tips</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Tournament Updates</span>
+                    <span>8</span>
+                </div>
+                <div>
+                    <span>Student Achievements</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Workshops & Events</span>
+                    <span>6</span>
+                </div>
+                <div>
+                    <span>Chess and Education</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Scholarships & Awards</span>
+                    <span>4</span>
+                </div>
+                <div>
+                    <span>Academy News</span>
+                    <span>9</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About ASHTAPADA CHESS ACADEMY</h4>
+        <p>
+            A charitable initiative dedicated to promoting chess education,
+            strategic thinking, and academic excellence throughout India.
+        </p>
+
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <p>
+            Empowering minds through chess with
+            <i class="fa fa-heart-o"></i>
+            ASHTAPADA CHESS ACADEMY
+        </p>
+    </section>
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
