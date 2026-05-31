@@ -9,10 +9,47 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
+    <div class="cursor-knight"> ♞ </div>
+    <div class="cursor-ring"></div>
+
+    <script>
+        const knight = document.querySelector(".cursor-knight");
+        const ring = document.querySelector(".cursor-ring");
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        let ringX = 0;
+        let ringY = 0;
+
+        document.addEventListener("mousemove",(e)=>{
+
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            knight.style.left = mouseX + "px";
+            knight.style.top = mouseY + "px";
+        });
+
+        function animate(){
+
+            ringX += (mouseX - ringX) * 0.15;
+            ringY += (mouseY - ringY) * 0.15;
+
+            ring.style.left = ringX + "px";
+            ring.style.top = ringY + "px";
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+    
     <section class="header">
         
         <nav>
             <a href="index.html"><img src="images/logo_only.png"></a>
+            
             <div class="nav-links" id="navLinks">  
                 <i class="fa fa-close" onclick="hideMenu()"></i>
                 <ul>
@@ -34,25 +71,61 @@
     </section>
     
 <!---------- about ----------->
-    
-    <section class="course">
-        <h1>About the Trust</h1>
-        <p>Established in April 2026 as a charitable trust in Kozhikode, Kerala, Ashtapada Chess Academy aims to promote chess education and provide professional training to aspiring players of all ages.</p>
-        <div class="row">
-            <div class="course-col">
-                <h3>Our Mission</h3>
-                <p>To empower students through chess by enhancing concentration, analytical thinking, and decision-making skills.</p>
-            </div>
-            <div class="course-col">
-                <h3>Our Vision</h3>
-                <p>To build a strong chess culture and create future champions while supporting academic and personal development.</p>
-            </div>
-            <div class="course-col">
-                <h3>Our Values</h3>
-                <p>Excellence, discipline, inclusiveness, integrity, and social responsibility.</p>
-            </div>
+<section class="about-us">
+
+    <div class="about-row">
+
+        <div class="about-image">
+            <img src="images/workshop.jpeg" alt="Ashtapada Chess Academy">
         </div>
-    </section>
+
+        <div class="about-content">
+            <h2>Why Choose Us?</h2>
+            <p>
+                Our academy combines structured chess training with personal
+                mentorship to help students reach their full potential both on
+                and off the board. We welcome learners of all ages and skill
+                levels, from beginners to aspiring champions.
+            </p>
+
+            <a href="about.html" class="hero-btn red-btn">
+                More About Us
+            </a>
+        </div>
+
+    </div>
+
+    <div class="values-section">
+
+        <h2>Our Core Values</h2>
+
+        <div class="values-row">
+
+            <div class="value-card">
+                <h3>⭐Excellence</h3>
+                <p>Encouraging continuous growth and achievement</p>
+            </div>
+
+            <div class="value-card">
+                <h3>⭐Inclusiveness</h3>
+                <p>Creating opportunities for every aspiring player</p>
+            </div>
+
+            <div class="value-card">
+                <h3>⭐Discipline</h3>
+                <p>Building focus, patience, and consistency</p>
+            </div>
+
+            <div class="value-card">
+                <h3>⭐ Integrity</h3>
+                <p>Promoting fair play and sportsmanship</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
     
 <!---------- programs ---------->
     
