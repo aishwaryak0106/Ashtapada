@@ -607,71 +607,313 @@ h3{
     color: #d4af37;
 }
 
-/*--------------- About Us Page --------------*/
-
-.sub-header{
-    height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/banner2.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #ffffff;
-}
-
-.sub-header h1{
-    margin-top: 100px;
-    color: #ffffff;
-}
+/* ====================================
+   ABOUT PAGE
+==================================== */
 
 .about-us{
     width: 80%;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding: 80px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .about-col{
     flex-basis: 48%;
-    padding: 30px 2px;
-}
-
-.about-col h1{
-    padding-top: 0;
-}
-
-.about-col p{
-    padding: 15px 0 25px;
-}
-
-.hero-btn.red-btn{
-    border: 1px solid #d4af37;
-    background: transparent;
-    color: #d4af37;
-}
-
-.hero-btn.red-btn:hover{
-    border: 1px solid #d4af37;
-    background: #d4af37;
-    color: #000000;
-}
-
-.hero-btn.red-btn::after{
-    background: #d4af37;
-}
-
-.hero-btn.red-btn::before{
-    background: #d4af37;
-}
-
-.content-image{
-    flex-basis: 50%;
 }
 
 .about-col img{
     width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+.about-col h1,
+.about-col h2{
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.about-col p{
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-col h4{
+    margin-top: 20px;
+    color: #d4af37;
+}
+
+/* ====================================
+   FOUNDER SECTION
+==================================== */
+
+.founder-section{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    border-top: 1px solid #eee;
+}
+
+/* ====================================
+   MISSION & VISION
+==================================== */
+
+.mission-vision{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.mission-card{
+    flex-basis: 48%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    transition: .4s;
+}
+
+.mission-card:hover{
+    transform: translateY(-8px);
+}
+
+.mission-card i{
+    font-size: 40px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.mission-card h2{
+    margin-bottom: 15px;
+}
+
+.mission-card p{
+    color: #666;
+    line-height: 1.8;
+}
+
+/* ====================================
+   CHESS BENEFITS
+==================================== */
+
+.chess-benefits{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.chess-benefits h1{
+    margin-bottom: 10px;
+}
+
+.section-subtitle{
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.benefit{
+    flex-basis: 22%;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: .4s;
+}
+
+.benefit:hover{
+    transform: translateY(-8px);
+}
+
+.benefit h3{
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.benefit p{
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ====================================
+   STATS SECTION
+==================================== */
+
+.stats-section{
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 90px 10%;
+}
+
+.stats-section h1{
+    margin-bottom: 50px;
+}
+
+.stat-box{
+    flex-basis: 22%;
+}
+
+.stat-box h2{
+    color: #d4af37;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.stat-box p{
+    color: #ddd;
+}
+
+/* ====================================
+   TESTIMONIALS
+==================================== */
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.testimonials h1{
+    margin-bottom: 50px;
+}
+
+.testimonial-card{
+    flex-basis: 48%;
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.testimonial-card p{
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h4{
+    color: #d4af37;
+}
+
+/* ====================================
+   BOOKING SECTION
+==================================== */
+
+.booking-section{
+    width: 90%;
+    margin: auto;
+    padding: 90px 0;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h1{
+    margin-bottom: 10px;
+}
+
+.section-title p{
+    color: #777;
+}
+
+/* ====================================
+   CTA SECTION
+==================================== */
+
+.cta{
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 100px 20px;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* ====================================
+   BUTTON
+==================================== */
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #d4af37;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.hero-btn:hover{
+    background: #d4af37;
+    border-color: #d4af37;
+}
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media(max-width:768px){
+
+    .row{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-col,
+    .mission-card,
+    .benefit,
+    .stat-box,
+    .testimonial-card{
+        flex-basis: 100%;
+    }
+
+    .about-us,
+    .founder-section,
+    .mission-vision,
+    .chess-benefits,
+    .testimonials{
+        width: 90%;
+    }
+
+    .stat-box{
+        margin-bottom: 35px;
+    }
+
+    .cta h1{
+        font-size: 24px;
+    }
+
+    .mission-card,
+    .testimonial-card,
+    .benefit{
+        padding: 25px;
+    }
+}
 /*---------- Blog Page -------------*/
 
 .blog-content{
