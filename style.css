@@ -94,6 +94,10 @@ nav .fa{
     display: none;
 }
 
+.nav-links a.active, .nav-links a:hover {
+    color: #d4af37;
+}
+
 .text-box{
     width: 90%;
     color: #ffffff;
